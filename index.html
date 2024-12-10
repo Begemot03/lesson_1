@@ -3,28 +3,78 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/styles/styles.css" />
 		<title>Lesson 1</title>
 	</head>
 	<body>
-		<p>
-			Напишите на почту
-			<a class="mail" href="mailto:petrov.an@roistat.com"
-				>petrov.an@roistat.com</a
-			>, чтобы связаться с нами
-		</p>
-		<button>test_event</button>
-		<form id="form" method="post">
-			<input name="name" type="text" placeholder="Имя" />
-			<input name="phone" type="tel" placeholder="Номер телефона" />
-			<input name="email" type="email" placeholder="E-mail" />
-			<textarea
-				name="comment"
-				type="text"
-				placeholder="Комментарий"
-				rows="4"
-			></textarea>
-			<button type="submit">Отправить</button>
-		</form>
+		<section class="section">
+			<div class="container">
+				<p class="mb-4">
+					Напишите на почту
+					<a class="mail" href="mailto:petrov.an@roistat.com"
+						>petrov.an@roistat.com</a
+					>, чтобы связаться с нами
+				</p>
+
+				<button class="button is-primary mb-4">Test Event</button>
+
+				<form id="form" method="post">
+					<div class="field">
+						<label class="label">Имя</label>
+						<div class="control">
+							<input
+								class="input"
+								name="name"
+								type="text"
+								placeholder="Введите ваше имя"
+							/>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">Номер телефона</label>
+						<div class="control">
+							<input
+								class="input"
+								name="phone"
+								type="tel"
+								placeholder="Введите ваш номер телефона"
+							/>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">E-mail</label>
+						<div class="control">
+							<input
+								class="input"
+								name="email"
+								type="email"
+								placeholder="Введите ваш E-mail"
+							/>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">Комментарий</label>
+						<div class="control">
+							<textarea
+								class="textarea"
+								name="comment"
+								placeholder="Оставьте ваш комментарий"
+								rows="4"
+							></textarea>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="control">
+							<button class="button is-link" type="submit">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
 		<script src="/src/scripts/main.js"></script>
 		<script>
 			(function (w, d, s, h, id) {

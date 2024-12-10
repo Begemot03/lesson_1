@@ -1,0 +1,17 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+.mail {
+	font-weight: bold;
+	color: #3273dc; 
+}
+.mail:hover {
+	text-decoration: underline;
+}
+.container {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 1.5rem;
+}
+textarea {
+	resize: none;
+}
