@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1</title>
-</head>
-<body>
-    
-    <script>(function(w, d, s, h, id) {    w.roistatProjectId = id; w.roistatHost = h;    var p = d.location.protocol == "https:" ? "https://" : "http://";    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);})(window, document, 'script', 'cloud.roistat.com', 'cd78bc8179dd1db6f76561a9aa290686');</script>
-    <script src="/src/scripts/main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lesson 1</title>
+	</head>
+	<body>
+		<p>
+			Напишите на почту
+			<a class="mail" href="mailto:petrov.an@roistat.com"
+				>petrov.an@roistat.com</a
+			>, чтобы связаться с нами
+		</p>
+		<button>test_event</button>
+		<form id="form" method="post">
+			<input name="name" type="text" placeholder="Имя" />
+			<input name="phone" type="tel" placeholder="Номер телефона" />
+			<input name="email" type="email" placeholder="E-mail" />
+			<textarea
+				name="comment"
+				type="text"
+				placeholder="Комментарий"
+				rows="4"
+			></textarea>
+			<button type="submit">Отправить</button>
+		</form>
+		<script src="/src/scripts/main.js"></script>
+		<script>
+			(function (w, d, s, h, id) {
+				w.roistatProjectId = id;
+				w.roistatHost = h;
+				var p = d.location.protocol == "https:" ? "https://" : "http://";
+				var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie)
+					? "/dist/module.js"
+					: "/api/site/1.0/" +
+					  id +
+					  "/init?referrer=" +
+					  encodeURIComponent(d.location.href);
+				var js = d.createElement(s);
+				js.charset = "UTF-8";
+				js.async = 1;
+				js.src = p + h + u;
+				var js2 = d.getElementsByTagName(s)[0];
+				js2.parentNode.insertBefore(js, js2);
+			})(
+				window,
+				document,
+				"script",
+				"cloud.roistat.com",
+				"cd78bc8179dd1db6f76561a9aa290686"
+			);
+		</script>
+	</body>
 </html>
